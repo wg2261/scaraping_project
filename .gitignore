@@ -3,3 +3,26 @@ __pycache__/
 .venv/
 .env
 .vscode/
+
+# Basic template for scrapping another -- chose not to use
+# def top_music_scrape(url, num_info=20):
+#     print(f"scraping, {url}")
+#     try:
+#         response = requests.get(url)
+#         if response.status_code != 200:
+#             print(f"Failed to get the webpage: {response.status_code}")
+#             return []
+#         soup = BeautifulSoup(response.text, 'html.parser')
+
+#         info_list = soup.find_all('a', href=lambda href: href and 'artist' in href)
+
+#         info = [item.text.strip() for item in info_list]
+
+#         print(info)
+        
+#         return info[:num_info]
+    
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return []
+#
