@@ -1,14 +1,43 @@
-The scraper uncovers from the website "https://boardgamegeek.com/browse/boardgame" games and it's name, rank, rating, and 
-url.
-This website is used because it seems obscure enough and people may want to have board game recommendations.
+# Boardgame recommendations
+This scrapes the boardgamegeek website for random boardgame recommendations.
 
-To run this:
-1. Git clone
-2. pip install -r requirements.txt
-3. Run either 
-    url = "https://boardgamegeek.com/browse/boardgame"
-    1. get_boardgame_rec(url, [], n)
-        # n = amount of recommendations you want
-        # For neatly printed game informations
-    2. games = scrape_board_games(url)
-        # For all the games and relevant information
+## Value
+Get quick and random boardgame recommendations from the top charts. Also retrieves info about its rank, rating, and url.
+
+## Prerequisites
+- Python 3.11 or higher
+- pip (Python package manager)
+
+## Setup
+1. Clone this repository or download the source code. `git clone https://github.com/wg2261/scraping_project.git`
+2. Navigate to the project directory:
+   ```
+   cd path/to/scraping_project
+   ```
+3. Create a virtual environemnt if you'd like
+    ```
+    python -m venv .venv 
+
+    # On Windows:
+    .venv\Scripts\activate
+
+    # On macOS and Linux:
+    source .venv/bin/activate
+
+    ```
+4. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Usage
+To run the application:
+```
+python main.py
+```
+
+Follow the on-screen prompts to interact
+Insert amount of boardgame recommendations you want
+
+## Data gathered
+- Boardgames and their information
